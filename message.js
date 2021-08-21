@@ -11,7 +11,13 @@ const positiveMessage = [
     "Nothing can hurt you!!"
 ];
 
+// Function that takes an array and logs random item from said array
 
+const message = arr => {
+    const random = Math.floor(Math.random() * arr.length)
+    console.log(arr[random]);
+}
 
+message(positiveMessage);
 
 
